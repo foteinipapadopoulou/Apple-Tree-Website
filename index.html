@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Demo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="myjs.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="mystyle.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <h1 class="page-header">Your Title</h1>
+                    <div class="card bg-light mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Add your subtitle</div>
+                        <div class="card-body">
+                        <h4 class="card-title">Add your title</h4>
+                        <p class="card-text" >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="story_content" class="form-label mt-4">Type your story</label>
+                        <textarea class="form-control" id ='story_content'  rows="3" spellcheck="false" placeholder="Type your story"></textarea>
+                        <button type="button" class="btn btn-primary mt-3" id="send_story">Send</button>
+
+                        <div id="errorAlert" class="alert alert-dismissible alert-danger mt-3" style="display: none;" >
+                            <button type="button" id="btn-close-errorAlert" class="btn-close"></button>
+                            <strong>Oh snap!</strong> <span id="alertMessage"></span>
+                        
+                          </div>
+                    </div>
+                                <!--the tree frame-->
+                <div class="tree d-flex justify-content-center">
+                    <figure>
+                    <img src="images/tree.png" class="tree_img" />
+
+                    <!--the leaf group frame-->
+                    <div class="leaf_test"> 
+                        <div id="story_0" class="leaf_group leaf_2" style="top:72%; left:48%; transform:rotate(30deg)">
+                            <p class="name_on_leaf">test</p>
+                            <p class="story_on_leaf">test-content</p>
+                        </div>
+                        <div id="story_1" class="leaf_group leaf_1" style="top:50%; left:95%; transform:rotate(30deg)">
+                            <p class="name_on_leaf">test</p>
+                            <p class="story_on_leaf">test-content</p>
+                        </div>
+                        <div id="story_2" class="leaf_group leaf_2" style="top:26%; left:2%; transform:rotate(340deg)">
+                            <p class="name_on_leaf">test</p>
+                            <p class="story_on_leaf">test-content</p>
+                        </div>
+                        <div id="story_3" class="leaf_group leaf_1" style="top:8%; right:25%; transform:rotate(30deg)">
+                            <p class="name_on_leaf">test</p>
+                            <p class="story_on_leaf">test-content</p>
+                        </div>
+                    </div> 
+                </figure>
+                    <!--end of leaf group frame-->
+
+                <div class="modal"  id="myModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal_title"></h5>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modal_content"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                <!--end of modal pack-->
+
+            </div>
+                </div>
+                <div class="col-2"> 
+                    <div class="sidebar">
+                        <nav class="navbar navbar-expand-lg bg-light">
+                            <ul class="nav nav-sidebar">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Home
+                                    <span class="visually-hidden">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">More Information</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
