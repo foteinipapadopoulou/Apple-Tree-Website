@@ -14,17 +14,18 @@ figure {
 }
 
 .tree_img {
-    width: 100%;
-    height: 100%;
+    margin-top: 15px;
+    width: 800px;
+    height: 600px;
     z-index: -1;
 }
 
 .leaf_test {
     position: absolute;
-    top: 12%;
-    left: 12%;
-    height: 55%;
-    width: 60%;
+    top: 15%;
+    left: 30%;
+    height: 35%;
+    width: 40%;
 }
 
 .leaf_1 {
@@ -81,8 +82,10 @@ figure {
 .name_on_leaf {
     color: #deebce;
     z-index: 999;
+    /* reduce font size */
+    font-size: 0.8em;
     text-overflow: ellipsis;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: auto;
     width: 50%;
     height: 20%;
@@ -93,10 +96,10 @@ figure {
 }
 
 .modal-content img {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    /* opacity: 0.4; */
 }
 
 #story_content {
